@@ -703,12 +703,12 @@
                xmlns="http://www.tei-c.org/ns/1.0"
                xmlns:sch="http://purl.oclc.org/dsdl/schematron">
                
-               <desc>[Note Change!] Schematron rule used to constrain this new element &lt;unknownAbbr&gt; in &lt;body&gt; element</desc>
+               <desc>[Note Change!] Schematron rule used to constrain this new element &lt;unknownAbbr&gt; in &lt;body&gt; element</desc> <!-- It is not redundant with the classes delcaration. In the class, this element can be present in teiHeader or I don't want it. So the schematron rule constrained the classes -->
                
                <constraint>
                   <sch:rule context="tei:unknownAbbr">
                      <sch:assert test="ancestor::tei:body">
-                        L'élément unknownAbbr doit être contenu dans body ou dans un enfant de body.
+                        This element must be contained in a body element or a child of a body element.
                      </sch:assert>
                   </sch:rule>
                </constraint>
