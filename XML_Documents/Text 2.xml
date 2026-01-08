@@ -9,6 +9,7 @@
 
 ]> <!-- Declaration of a external entity which contain biographical description of person and list of places. -->
 
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -96,7 +97,7 @@
       <body xml:lang="fr">
 
          <opener>
-            <byline> P. Hêche caporal 20e d'infanterie 30e compagnie <placeName ref="#Mar"
+            <byline><unknownAbbr status="unknow">P. Hêche </unknownAbbr>caporal 20e d'infanterie 30e compagnie <placeName ref="#Mar"
                   >Marmande</placeName>
             </byline>
             <dateline>

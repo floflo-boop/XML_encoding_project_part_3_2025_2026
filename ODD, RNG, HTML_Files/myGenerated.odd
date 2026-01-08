@@ -601,7 +601,7 @@
                <exemplum>
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <name><choice>
-                           <orig xml:lang="st">frusques</orig>
+                           <orig xml:lang="x-st">frusques</orig> <!-- if x-st is declared in /TEI/teaiHeader/profileDesc/langUsage/language/@ident -->
                            <reg xml:lang="fr">vieux habits</reg>
                         </choice></name>
                   </egXML>
@@ -667,7 +667,9 @@
             <elementSpec ident="unknownAbbr" mode="add">
                <desc> [Note Change !] New element added for pointing at unknown abbreviation. He can have attribute for precising if the abbreviation is now resolved or not. And if it is resolved, to specified the traduction</desc>
                <classes>
-                  <memberOf key="model.pLike"/> <!-- Specify that this new element can be contained in any phrases element. So it must be in Body element and in any element contained by body element. -->
+                  <memberOf key="model.pLike"/> <!-- Specify where this element can be contained -->
+                  <memberOf key="model.bylinePart"/>
+                  <memberOf key="model.phrase"></memberOf>
                </classes>
                <content>
                   <textNode/>
